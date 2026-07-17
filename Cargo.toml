@@ -20,6 +20,7 @@ members = [
     "plugins/nvidia-jetson",
     "plugins/nvidia-nvml",
     "plugins/opentelemetry",
+    "plugins/papi",
     "plugins/perf",
     "plugins/process-to-cgroup-bridge",
     "plugins/procfs",

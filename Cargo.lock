@@ -99,6 +99,7 @@ dependencies = [
  "plugin-nvidia-nvml",
  "plugin-oar",
  "plugin-opentelemetry",
+ "plugin-papi",
  "plugin-perf",
  "plugin-process-to-cgroup-bridge",
  "plugin-procfs",
@@ -2814,6 +2815,15 @@ dependencies = [
 ]
 
 [[package]]
+name = "papi-wrap"
+version = "0.5.6"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "921ba5966fd401e322eea0b77b1d1e74b59346aa225765bc68d5ff25fd6076ed"
+dependencies = [
+ "libc",
+]
+
+[[package]]
 name = "parking_lot"
 version = "0.12.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -3244,6 +3254,18 @@ dependencies = [
  "tokio-stream",
  "toml 0.9.12+spec-1.1.0",
  "tonic 0.12.3",
+]
+
+[[package]]
+name = "plugin-papi"
+version = "0.1.0"
+dependencies = [
+ "alumet",
+ "anyhow",
+ "humantime-serde",
+ "log",
+ "papi-wrap",
+ "serde",
 ]
 
 [[package]]

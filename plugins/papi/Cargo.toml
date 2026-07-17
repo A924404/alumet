@@ -1,0 +1,18 @@
+[package]
+name = "plugin-papi"
+version = "0.1.0"
+edition.workspace = true
+repository.workspace = true
+
+[dependencies]
+alumet.workspace = true
+anyhow.workspace = true
+log.workspace = true
+serde.workspace = true
+humantime-serde.workspace = true
+papi-wrap = "0.5.6"
+
+
+
+[lints]
+workspace = true
